@@ -11,7 +11,7 @@
 			$data['title'] = "Times12px";
 			$data['posts'] = $this->blog_model->getPosts();
 			$this->load->view('templates/header', $data);
-			$this->load->view('blog_view', $data);
+			$this->load->view('homepage', $data);
 			$this->load->view('templates/footer', $data);
 
 		}
@@ -21,7 +21,7 @@
 			$data['title'] = "Times12px";
 			$data['posts'] = $this->blog_model->getType($type);
 			$this->load->view('templates/header', $data);
-			$this->load->view('blog_view', $data);
+			$this->load->view('homepage', $data);
 			$this->load->view('templates/footer', $data);
 		}
 
