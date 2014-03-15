@@ -8,7 +8,7 @@
 		
 		function index()
 		{
-			$data['title'] = "Times12px";
+			$data['title'] = "UTMFoodies";
 			$data['posts'] = $this->blog_model->getPosts();
 			$this->load->view('templates/header', $data);
 			$this->load->view('homepage', $data);
@@ -16,6 +16,7 @@
 
 		}
 
+		/*
 		function type($type) {
 			$this->load->helper('form');
 			$data['title'] = "Times12px";
@@ -24,5 +25,6 @@
 			$this->load->view('homepage', $data);
 			$this->load->view('templates/footer', $data);
 		}
-
+		*/
+		
 	}

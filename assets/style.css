@@ -1,178 +1,76 @@
-* {
-	margin: 0;
-	padding: 0;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+h1 {
+	color: orange;
+	text-align: center;
+}
+
+#header {
+	border-bottom: 1px solid black;
 }
 
 body {
-	font-family: 'Source Sans Pro', Lucida Grande, sans-serif;
-	font-weight: 400;
-	font-size: 1em;
-	color: #242424;
+	color: #4C4C4C;
+	font-family: "Open Sans";
 }
 
-div {
-	padding: 15px;
+#main {
+	margin: auto;
+	width: 70%;
 }
 
-h1 {
-	font-family: 'Roboto Slab', Georgia, serif;
-	padding-top: 20px;
-	margin-left: 15px;
-	font-size: 2em;
-	color: #008080;
-}
-
-
-h2 {
-	font-family: 'Roboto Slab', Georgia, serif;
-	margin: 10px 0px 10px;
-	font-size: 1.5em;
-}
-
-h3 {
-	font-family: 'Source Sans Pro', Lucida Grande, sans-serif;
-	font-weight: 300;
-	font-size: 1.3em;
-	margin: 0px 0px 10px;
-}
-
-h4 {
-	font-family: 'Source Sans Pro', Lucida Grande, sans-serif;
-	font-weight:400;
-	padding: 5px 0px 15px;
-	margin-left: 20px;
-	font-size: 1em;
-}
-
-h5 {
-	font-family: 'Source Sans Pro', Lucida Grande, sans-serif;
-	font-weight: 400;
-	font-size: 1.25em;
-	margin: 0px 0px 10px 10px;
-}
-
-p {
-	line-height: 1.5em;
+nav {
+	width: 100%;
 }
 
 ul {
-	list-style-position: inside;
-	line-height: 1.5em;
+	list-style: none;
+	padding: 0;
 }
 
-label {
-	font-family: 'Source Sans Pro', Lucida Grande, sans-serif;
-	font-weight: 300;
-	font-size: 1.25em;
-	line-height: 2em;
-	padding-right: 10px;
-}
-
-input {
-	padding: 1px;
-	font-family: 'Source Sans Pro', Lucida Grande, sans-serif;
-	font-weight: 400;
-	font-size: 1em;
-}
-button {
-	float: right;
-	padding: 5px 30px;
-	margin-top: 15px;
-	font-family: 'Roboto Slab', Georgia, serif;
-	font-size: 1em;
+nav ul li {
 	background-color: white;
-	border: 1px solid #008080;
-	color: #008080 ;
+	color: orange;
+	display: inline;	
+	float: left;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	text-align: center;
+	width: 33%;
 }
 
-button:hover {
-	background-color: #008080;
-	color: #FFFFFF;
-	border: 1px solid #FFFFFF;
+#findbtn:hover, #mapbtn:hover {
+	background-color: orange;
+	color: white;
 }
 
-a:visited {
-	color: #008080;
-}
-
-a:link {
-	color: #008080;
+a {
+	color: orange;
+	font-size: 110%;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #40e0d0;
+	background-color: orange;
+	color: white;
 }
 
-#wrap {
-	width: 850px;
-	margin: auto;
+.restListings {
+	margin-top: 90px;
+}
+
+.row {
 	display: block;
+	margin: 2em;
+	padding: 1em;
+	width: 100%;
 }
 
-#menu {
-	width: 120px;
+.rowElement {
+	border: 1px solid black;
+	display: inline;
 	float: left;
-	position: fixed;
-	border-left: 1px dotted;
+	height: 200px;
+	margin: 10px;
+	width: 15%;
 }
-
-#mainarea {
-	width: 650px;
-	float: right;
-	padding-bottom: 0px;
-}
-
-#footer {
-	text-align: center;
-	font-family: 'Roboto Slab', Georgia, serif;
-	font-size: 0.8em;
-	margin-top: 15px;
-	padding-bottom: 20px;
-	width: 620px;
-	float: right;
-
-}
-
-#hidden:hover {
-	color: #FFFFFF;
-}
-
-.box {
-	margin: 0;
-	padding: 15px 0 5px;
-	border: 1px solid ;
-	border-style: none none dotted none;
-}
-
-.form {
-	padding: 15px 0 5px;
-}
-
-.right {
-	text-align: right;
-	padding-top: -15px;
-	margin: -15px 0px 5px;
-}
-
-.spacing {
-	margin: 15px 0px 15px;
-}
-
-.fakebutton {
-	padding: 5px 30px;
-	margin: 0px 0px 5px 10px;
-	font-family: 'Roboto Slab', Georgia, serif;
-	font-size: 1em;
-	background-color: white;
-	border: 1px solid #008080;
-	color: #008080 ;
-}
-
-.fakebutton:hover {
-	background-color: #008080;
-	color: #FFFFFF;
-	border: 1px solid #FFFFFF;
-}
-
-

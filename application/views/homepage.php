@@ -1,31 +1,17 @@
-<!DOCTYPE html>
-
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="style2.css">
-		<title>UTMFoodies</title>
-	</head>
-
-	<body>
-
 		<div id="main">
 			<div id="header">
-				<h1>UTMFoodies</h1>
+				<h1><?php echo $title; ?></h1>
 			</div>
-
 
 			<div id="navbar">
 				<nav>
 					<ul>
-						<li class="navbtn"><a href="/find">Find Restaurant</a></li>
-						<li class="navbtn"><a href="/add">Add Review</a></li>
-						<li class="navbtn"><a href="/map">Map</a></li>
+						<li id="findbtn"><a href="/find">Find Restaurant</a></li>
+						<li id="mapbtn"><a href="/map">Map</a></li>
 						<li><input type="text" id="searchbox" name="search" placeholder="Search"><input type="button" name="searchbtn" value="Q"></li>
 					</ul>
 				</nav>
 			</div> 
-
-			<hr>
 
 			<div class="restListings">
 				<div class="row" id="row1">
@@ -54,9 +40,3 @@
 					<div class="rowElement" id="blindduckpub">Blind Duck Pub</div>
 				</div>
 			</div>
-
-			<div id="footer">
-			</div>	
-		</div>
-	</body>
-</html>

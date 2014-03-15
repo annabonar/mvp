@@ -1,12 +1,8 @@
 
 
-	<div id="footer">
-		<p>Designed by Anna Bonar | CCT460</p>
-	</div>
-
-</div>
-
-</div>
-
-</body> 
+			<div id="footer">
+				<p>About UTMFoodies</p>
+			</div>
+		</div>
+	</body> 
 </html>
