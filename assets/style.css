@@ -9,6 +9,10 @@ h1 {
 	border-bottom: 1px solid black;
 }
 
+#headerLink {
+
+}
+
 body {
 	color: #4C4C4C;
 	font-family: "Open Sans";
@@ -50,7 +54,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+nav ul li a:hover {
 	background-color: orange;
 	color: white;
 }
@@ -73,4 +77,10 @@ a:hover {
 	height: 200px;
 	margin: 10px;
 	width: 15%;
+}
+
+.infoSectionChild {
+	display: inline;
+	float: left;
+	width: 50%;
 }

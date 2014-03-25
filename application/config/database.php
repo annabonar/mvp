@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'ccit1559';
-$db['default']['password'] = 'Cyber-pirate8';
-$db['default']['database'] = 'ccit1559_wordpress';
+$db['default']['username'] = 'ccit1563';
+$db['default']['password'] = 'pinktape30';
+$db['default']['database'] = 'ccit1563_wordpress';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

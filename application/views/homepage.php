@@ -1,18 +1,3 @@
-		<div id="main">
-			<div id="header">
-				<h1><?php echo $title; ?></h1>
-			</div>
-
-			<div id="navbar">
-				<nav>
-					<ul>
-						<li id="findbtn"><a href="/find">Find Restaurant</a></li>
-						<li id="mapbtn"><a href="/map">Map</a></li>
-						<li><input type="text" id="searchbox" name="search" placeholder="Search"><input type="button" name="searchbtn" value="Q"></li>
-					</ul>
-				</nav>
-			</div> 
-
 			<div class="restListings">
 				<div class="row" id="row1">
 					<div class="rowElement" id="boosterjuice">Booster Juice</div>
