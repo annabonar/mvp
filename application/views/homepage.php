@@ -1,10 +1,10 @@
 			<div class="restListings">
 				<div class="row" id="row1">
-					<div class="rowElement" id="boosterjuice">Booster Juice</div>
-					<div class="rowElement" id="elements">Elements</div>
-					<div class="rowElement" id="internationalkitchen">International Kitchen</div>
-					<div class="rowElement" id="pizzapizza">Pizza Pizza</div>
-					<div class="rowElement" id="tandoriindiancuisine">Tandori Indian Cuisine</div>
+					<a href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/view/1"><div class="rowElement" id="boosterjuice">Booster Juice</div></a>
+					<a href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/view/2"><div class="rowElement" id="elements">Elements</div></a>
+					<a href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/view/3"><div class="rowElement" id="internationalkitchen">International Kitchen</div></a>
+					<a href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/view/4"><div class="rowElement" id="pizzapizza">Pizza Pizza</div></a>
+					<a href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/view/5"><div class="rowElement" id="tandoriindiancuisine">Tandori Indian Cuisine</div></a>
 				</div>
 				<div class="row" id="row2">
 					<div class="rowElement" id="delistation">Deli Station</div>

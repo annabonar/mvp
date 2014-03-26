@@ -34,6 +34,16 @@
   			$this->db->update('data', $data); 
 		}
 
+		function submit_review($rest_id) { 
+ 			$data['name'] = $this->input->post('name'); 
+ 			$data['email'] = $this->input->post('email');
+ 			$data['review'] = $this->input->post('review'); 
+ 			$data['rating'] = $this->input->post('rating'); 
+ 			$data['recommend'] = $this->input->post('recommend'); 
+  			$this->db->where('rest_id', $rest_id); 
+  			$this->db->update('reviews', $data); 
+		}
+
 		function delete_post($id)
     	{
       		$this->db->delete('data', array('id' => $id));

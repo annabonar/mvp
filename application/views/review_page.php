@@ -1,4 +1,9 @@
-<?php echo form_open('mvp/review') ?>
+<!--
+	for testing (make sure the id of the restaurant is correct):
+<?php echo $rest_id; ?>
+-->
+<?php echo form_open('mvp/submit_review/' . $rest_id) ?>
+
 	Add Your Review
 
 	<br><br>
@@ -13,8 +18,14 @@
 	
 	<br><br>
 
-	Restaurant: Under construction
-	
+	Restaurant:
+		<!--
+		<?php foreach($info as $i): ?>
+			<?php echo $i['name']; ?>
+		<?php endforeach; ?>
+		-->
+		<?php echo $info[0]['name']; ?>
+
 	<br><br>
 
 	Review:
@@ -45,5 +56,5 @@
 
 	<br><br>
 
-	<input type=submit value="Submit review">
+	<input type="submit" class="submitButton" name="submit_review" value="Submit Review">
 </form>
