@@ -9,13 +9,14 @@
 		function index()
 		{
 			$data['title'] = "UTMFoodies";
-			$data['posts'] = $this->mvp_model->getPosts();
+			//$data['posts'] = $this->mvp_model->getPosts();
+
 			$this->load->view('templates/header', $data);
 			$this->load->view('homepage', $data);
 			$this->load->view('templates/footer', $data);
 		}
 
-		// View a restaurant's page.
+		// Show a restaurant's page. The restaurant to be shown is specified by the $rest_id (the id of the restaurant).
 		// A restaurant's page will consist of:
 			// an information section (with details about the restaurant) and 
 			// a reviews section (which displays all the reviews for this restaurant).
@@ -24,20 +25,24 @@
 			//$this->load->helper('form');
 			$data['title'] = "UTMFoodies";
 			$data['rest_id'] = $rest_id;
-			$data['info'] = $this->mvp_model->getInfo($rest_id);
+			$data['info'] = $this->mvp_model->get_info($rest_id);
+			$data['reviews'] = $this->mvp_model->get_reviews($rest_id);
+			$data['average_rating'] = $this->mvp_model->get_average_rating($rest_id); // The average rating of this restaurant.
+			$data['num_rec'] = $this->mvp_model->get_num_rec($rest_id); // A message showing the number of people who would recommend this restaurant.
+
 			$this->load->view('templates/header', $data);
 			$this->load->view('restaurant_page', $data);
 			$this->load->view('templates/footer', $data);
 		}
 
-		// Add a review for a restaurant.
+		// Show the add a review page for a restaurant.
 		function review($rest_id)
 		{
 			$this->load->helper('form');
 			$data['title'] = "UTMFoodies";
 			$data['rest_id'] = $rest_id;
-			$data['info'] = $this->mvp_model->getInfo($rest_id);
-			//$data['posts'] = $this->mvp_model->getPosts();
+			$data['info'] = $this->mvp_model->get_info($rest_id);
+
 			$this->load->view('templates/header', $data);
 			$this->load->view('review_page', $data);
 			$this->load->view('templates/footer', $data);
@@ -47,7 +52,10 @@
 		function submit_review($rest_id) {
 			$this->load->helper('form'); 
 			$data['title'] = "UTMFoodies";
-			//$this->mvp_model->update_post($id);
+			$data['rest_id'] = $rest_id;
+
+			$this->mvp_model->submit_review($rest_id);
+
 			$this->load->view('templates/header', $data);
 			$this->load->view('review_submit_success_view', $data);
 			$this->load->view('templates/footer', $data);

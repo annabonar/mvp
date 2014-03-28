@@ -1,8 +1,6 @@
-<!--
-	for testing (make sure the id of the restaurant is correct):
-<?php echo $rest_id; ?>
--->
 <?php echo form_open('mvp/submit_review/' . $rest_id) ?>
+	<input type="hidden" name="rest_id" value="<?php echo $rest_id; ?>">
+	<input type="hidden" name="status" value="1">
 
 	Add Your Review
 
@@ -43,8 +41,8 @@
 	<br><br>
 
 	Would you recommend?:
-		<input type="radio" name="recommend" value="yes"> Yes
-		<input type="radio" name="recommend" value="no"> No
+		<input type="radio" name="recommend" value="Yes"> Yes
+		<input type="radio" name="recommend" value="No"> No
 
 	<br><br>
 
@@ -56,5 +54,5 @@
 
 	<br><br>
 
-	<input type="submit" class="submitButton" name="submit_review" value="Submit Review">
+	<input type="submit" class="submitButton" value="Submit Review">
 </form>

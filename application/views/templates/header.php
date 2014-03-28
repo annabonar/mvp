@@ -11,15 +11,16 @@
 
 		<div id="main">
 			<div id="header">
-				<h1><a id="headerlink" href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/"><?php echo $title; ?></a></h1>
+				<h1><a id="headerLink" href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/"><?php echo $title; ?></a></h1>
 			</div>
 
-			<div id="navbar">
+			<div id="navBar">
 				<nav>
 					<ul>
-						<li id="findbtn"><a href="/find">Find Restaurant</a></li>
-						<li id="mapbtn"><a href="/map">Map</a></li>
-						<li><input type="text" id="searchbox" name="search" placeholder="Search"><input type="button" name="searchbtn" value="Q"></li>
+						<li id="homeButton"><a href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/">Home</a></li>
+						<li id="findButton"><a href="/find">Find Restaurant</a></li>
+						<li id="mapButton"><a href="/map">Map</a></li>
+						<li><input type="text" id="searchbox" name="search" placeholder="Search"><input type="button" name="searchButton" value="Q"></li>
 					</ul>
 				</nav>
 			</div> 

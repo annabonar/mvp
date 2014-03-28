@@ -1,10 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-h1 {
-	color: orange;
-	text-align: center;
-}
-
 #header {
 	border-bottom: 1px solid black;
 }
@@ -13,14 +8,19 @@ h1 {
 
 }
 
+#main {
+	margin: auto;
+	width: 70%;
+}
+
 body {
 	color: #4C4C4C;
 	font-family: "Open Sans";
 }
 
-#main {
-	margin: auto;
-	width: 70%;
+h1 {
+	color: orange;
+	text-align: center;
 }
 
 nav {
@@ -40,10 +40,10 @@ nav ul li {
 	padding-bottom: 1em;
 	padding-top: 1em;
 	text-align: center;
-	width: 33%;
+	width: 25%;
 }
 
-#findbtn:hover, #mapbtn:hover {
+#homeButton:hover, #findButton:hover, #mapButton:hover {
 	background-color: orange;
 	color: white;
 }
@@ -83,4 +83,25 @@ nav ul li a:hover {
 	display: inline;
 	float: left;
 	width: 50%;
+}
+
+#footer {
+	width: 70%;
+	font-family: arial;
+	color: #FFA500;
+	margin-top: 800px;
+	border-top: 1px solid #000;
+	font-size: 15px;
+margin-left: 150px;
+text-align:center;}
+
+#addReviewButton {
+	float: right;
+}
+
+.reviewDiv {
+	border: 1px solid black;
+	margin: auto;
+	margin-top: 1.5em;
+	padding: 1em;
 }

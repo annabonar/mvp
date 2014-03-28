@@ -10,6 +10,7 @@
 		{
 			$data['title'] = "UTMFoodies";
 			$data['posts'] = $this->blog_model->getPosts();
+
 			$this->load->view('templates/header', $data);
 			$this->load->view('homepage', $data);
 			$this->load->view('templates/footer', $data);

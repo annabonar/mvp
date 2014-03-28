@@ -33,14 +33,30 @@ restaurant_page.php will be a template for all of the restaurant pages
 
 	</div>
 	<div class="infoSectionChild">
-		This is where the average rating, number of people who recommend this restaurant. and the view on map button will go.
+		Average rating: <?php echo $average_rating[0]['rating']; ?>
+		<br>
+		<?php echo $num_rec; ?>
+		<br>
+		still need: [view on map button].
 	</div>
 </div>
 
 <div class="reviewsSection">
-	*reviews will go here, UNDER THE INFO SECTION*
+	<h2>Reviews</h2>
 	<a href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/review/<?php echo $rest_id; ?>">
-		<button type="submit" name="add_review">Add A Review
-		</button>
+		<button type="submit" id="addReviewButton">Add A Review</button>
 	</a>
+
+	<?php foreach($reviews as $review): ?>
+		<div class="reviewDiv">
+			Name: <?php echo $review['name']; ?>
+			<br>
+			Review: <?php echo $review['review']; ?>
+			<br>
+			Rating: <?php echo $review['rating']; ?>
+			<br>			
+			Would You Recommend? <?php echo $review['recommend']; ?>
+		</div>
+	<?php endforeach; ?>
+
 </div>

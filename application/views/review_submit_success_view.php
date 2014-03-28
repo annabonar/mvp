@@ -1,3 +1,4 @@
+<?php echo $rest_id; ?>
 <h2>Review submitted!</h2> 
 	<p>Thank you for your review.</p>
 
