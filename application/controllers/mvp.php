@@ -59,17 +59,6 @@
 			$this->load->view('templates/header', $data);
 			$this->load->view('review_submit_success_view', $data);
 			$this->load->view('templates/footer', $data);
-		}	
-
-		/*
-		function type($type) {
-			$this->load->helper('form');
-			$data['title'] = "Times12px";
-			$data['posts'] = $this->blog_model->getType($type);
-			$this->load->view('templates/header', $data);
-			$this->load->view('homepage', $data);
-			$this->load->view('templates/footer', $data);
 		}
-		*/
 		
 	}

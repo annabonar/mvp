@@ -1,25 +1,33 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-#header {
-	border-bottom: 1px solid black;
+@font-face{ 
+	font-family: 'bebas';
+	src: url('/~ccit1563/mvp/assets/bebasneue/BebasNeue-webfont.eot');
+	src: url('/~ccit1563/mvp/assets/bebasneue/BebasNeue-webfont.eot') format('eot'),
+	     url('/~ccit1563/mvp/assets/bebasneue/BebasNeue-webfont.woff') format('woff'),
+	     url('/~ccit1563/mvp/assets/bebasneue/BebasNeue-webfont.tff') format('truetype'),
+	     url('/~ccit1563/mvp/assets/bebasneue/BebasNeue-webfont.svg') format('svg');
 }
 
-#headerLink {
-
+.header {
+	margin-left: auto;
+	margin-top: auto;
 }
 
 #main {
 	margin: auto;
-	width: 70%;
+	width: 90%;
 }
 
 body {
-	color: #4C4C4C;
-	font-family: "Open Sans";
+	color: #f16487;
+	font-family: "Arial";
+	background-color: #f9f1e1;
+	font-size: 1em;
 }
 
 h1 {
-	color: orange;
+	color: #f16487;
 	text-align: center;
 }
 
@@ -33,30 +41,44 @@ ul {
 }
 
 nav ul li {
-	background-color: white;
-	color: orange;
+	background-color: #f16487;
+	color: #f7efdf;
 	display: inline;	
 	float: left;
 	padding-bottom: 1em;
 	padding-top: 1em;
 	text-align: center;
-	width: 25%;
+	width: 32%;
+	margin-top: 40px;
+}
+
+nav ul li a {
+	color: #f7efdf !important;
+	text-transform: uppercase;
+	font-family: bebas;
+	font-size: 21px;
 }
 
 #homeButton:hover, #findButton:hover, #mapButton:hover {
-	background-color: orange;
+	background-color: #f16487;
 	color: white;
 }
 
 a {
-	color: orange;
+	color: #f16487;
 	font-size: 110%;
 	text-decoration: none;
 }
 
 nav ul li a:hover {
-	background-color: orange;
+	background-color: #f16487;
 	color: white;
+	border-bottom: 2px solid #f7efdf;
+}
+
+#borderthough {
+	background-color: transparent !important;
+	width: 22px !important;
 }
 
 .restListings {
@@ -65,43 +87,215 @@ nav ul li a:hover {
 
 .row {
 	display: block;
-	margin: 2em;
+	margin: 1em;
 	padding: 1em;
 	width: 100%;
 }
 
 .rowElement {
-	border: 1px solid black;
+	border: 1px solid #998382;
 	display: inline;
 	float: left;
-	height: 200px;
+	height: 188px;
 	margin: 10px;
-	width: 15%;
+	max-width: 25%;
+	width: 250px;
+}
+
+.rowElement img {
+width: 100%;
 }
 
 .infoSectionChild {
 	display: inline;
 	float: left;
-	width: 50%;
+	width: 95%;
 }
 
 #footer {
-	width: 70%;
-	font-family: arial;
-	color: #FFA500;
-	margin-top: 800px;
-	border-top: 1px solid #000;
-	font-size: 15px;
-margin-left: 150px;
-text-align:center;}
+	border-top-color:#F16487;
+	border-top-style:solid;
+	border-top-width:1px;
+	color:#998382;
+	font-family:arial;
+	font-size:20px;
+	font-weight:bold;
+	margin-left:157px;
+	margin-top:800px;
+	text-align:center;
+	width:80%;
+}
 
 #addReviewButton {
 	float: right;
 }
 
 .reviewDiv {
-	border: 1px solid black;
+	border: 1px solid #998382;
 	margin: auto;
 	margin-top: 1.5em;
 	padding: 1em;
+	margin-left: 1px;
+}
+
+#social {
+}
+
+#social ul
+{
+list-style-type:none;
+  margin-top:-94px;
+  padding:0;
+}
+
+#social li {
+	display: inline;
+	  text-indent: 100% !important;
+}
+
+#social li a {
+	opacity:1;
+	overflow:hidden;
+	text-indent:9999px;
+	transition:all 0.5s ease;
+	width:30px;
+	-webkit-transition:all 0.5s ease;
+	font-size:0;
+	height:30px;
+	line-height:0;
+}
+
+#social li a {
+	display:inline-block;
+	font-size:0;
+	vertical-align:top;
+}
+
+.facebook {
+	background-image:url(http://phoenix.sheridanc.on.ca/~ccit1563/images/fb.png);
+	background-position:initial initial;
+	background-repeat:initial initial;
+}
+
+.twitter {
+	background-image:url(http://phoenix.sheridanc.on.ca/~ccit1563/images/twitter.png);
+	background-position:initial initial;
+	background-repeat:initial initial;
+}
+
+.gplus {
+	background-image:url(http://phoenix.sheridanc.on.ca/~ccit1563/images/gplus.png);
+	background-position:initial initial;
+	background-repeat:initial initial;
+}
+
+div#qTip {
+	background-color:#f16487;
+	padding: 6px;
+	border-right: 1px solid #f05d82;
+	border-bottom: 1px solid #f05d82;
+	display: none;
+	color: #fff;
+	font: 11px Arial;
+	font-weight: 100;
+	text-align: left;
+	position: absolute;
+	z-index: 1000;
+	text-shadow: #fff 0px 0px 0px;
+	-moz-opacity:.90;
+	filter:alpha(opacity=90);
+	opacity:.90;
+	letter-spacing: 1px;
+}
+
+div#qTip b {
+	text-transform: uppercase;
+}
+
+
+p {
+	color: #998382;
+	font-size: 20px;
+	font-family: bebas, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+h2 {
+	font-size: 20px;
+	font-family: bebas, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+#pick {
+	color: #998382;
+	font-size: 22px;
+	font-family: bebas;
+	text-align: center;
+	margin-bottom: -80px;
+	letter-spacing: 2px;
+}
+
+m {
+	color: #f16487;
+	font-size: 20px;
+	font-family: bebas;
+}
+
+g {
+	color: #f16487;
+	font-size: 19px;
+	font-family: bebas, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+
+}
+
+n {
+	color: #998382;
+}
+
+.move {
+	margin-left: 70px;
+}
+
+
+#reviews {
+	margin-left: 250px;
+}
+
+#pace {
+	color: #998382;
+	font-size: 25px;
+	font-family: bebas, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 1px;
+}
+
+.reviewsSection {
+	margin-top: 14px;
+}
+
+#ride {
+	margin-left: -150px;
+}
+
+#footer ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	margin-left: 300px;
+}
+
+ #footer  ul li {
+	color: #f7efdf;
+	display: inline;	
+	float: left;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	margin-left: 10px;
+}
+
+ #counter {
+	margin-top: 140px;
 }

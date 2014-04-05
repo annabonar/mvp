@@ -1,11 +1,15 @@
-<?php echo form_open('mvp/submit_review/' . $rest_id) ?>
+<div id="pick">Got A Review?
+		<br> Add your <m>Review</m><br>▼
+		</div>
+
+	<br><br><br><br><br><br><br><br>
+
+<div id="reviews">
+
+	<?php echo form_open('mvp/submit_review/' . $rest_id) ?>
 	<input type="hidden" name="rest_id" value="<?php echo $rest_id; ?>">
 	<input type="hidden" name="status" value="1">
 
-	Add Your Review
-
-	<br><br>
-	
 	Name: 
 		<input type="text" name="name" placeholder="Name" size="25">
 	
@@ -46,13 +50,6 @@
 
 	<br><br>
 
-	Picture: Under Construction
-
-	<br><br>
-
-	Capcha: Under Construction
-
-	<br><br>
-
 	<input type="submit" class="submitButton" value="Submit Review">
-</form>
+	</form>
+</div>

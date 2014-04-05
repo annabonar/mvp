@@ -2,8 +2,8 @@
 restaurant_page.php will be a template for all of the restaurant pages 
 (i.e., all of the restaurant pages' format will be the same, the only difference is the content).
 -->
+<div class="move">
 
-<div class="infoSection">
 	<div class="infoSectionChild">
 		<!--
 		<?php foreach($info as $i): ?>
@@ -17,46 +17,58 @@ restaurant_page.php will be a template for all of the restaurant pages
 		<?php endforeach; ?>
 		-->
 
-		<?php echo $info[0]['name']; ?>
+		<div id="pace"><?php echo $info[0]['name']; ?> ▼</div>
 		
-		<br><br>
+		<br>
 		
 		<?php echo $info[0]['description']; ?>
 		
 		<br><br>
 		
-		<?php echo $info[0]['hours']; ?>
+		<g>Hours:</g><br>
+		<n><?php echo $info[0]['hours']; ?></n>
 		
 		<br><br>
 
-		<?php echo $info[0]['location']; ?>
+		<g>Location:</g><br>
+		<n><?php echo $info[0]['location']; ?></n>
 
-	</div>
-	<div class="infoSectionChild">
-		Average rating: <?php echo $average_rating[0]['rating']; ?>
-		<br>
-		<?php echo $num_rec; ?>
-		<br>
-		still need: [view on map button].
-	</div>
-</div>
+		<br><br>
+		
+		<g>Average rating:</g><br>
+		<n><?php echo round($average_rating[0]['rating'], 2); ?></n>
+		
+		<br> <br>
 
-<div class="reviewsSection">
-	<h2>Reviews</h2>
-	<a href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/review/<?php echo $rest_id; ?>">
+		<g>Recommendations:</g><br>
+		<n><?php echo $num_rec; ?></n>
+
+		<br>
+
+		<a href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/review/<?php echo $rest_id; ?>">
 		<button type="submit" id="addReviewButton">Add A Review</button>
-	</a>
+		</a>
+
+
+
+	<div class="reviewsSection">
+	<g>Reviews ▼</g>
+
 
 	<?php foreach($reviews as $review): ?>
 		<div class="reviewDiv">
-			Name: <?php echo $review['name']; ?>
+			<n><b>Name:</b></n> <?php echo $review['name']; ?>
 			<br>
-			Review: <?php echo $review['review']; ?>
+			<n><b>Review: </n></b><?php echo $review['review']; ?>
 			<br>
-			Rating: <?php echo $review['rating']; ?>
+			<n><b>Rating:</n></b> <?php echo $review['rating']; ?>
 			<br>			
-			Would You Recommend? <?php echo $review['recommend']; ?>
+			<n><b>Would You Recommend?</n></b> <?php echo $review['recommend']; ?>
 		</div>
 	<?php endforeach; ?>
 
+	</div>
+
+
+		</div>
 </div>
