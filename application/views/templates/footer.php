@@ -1,4 +1,4 @@
-		</div>
+		</div></div>
 		<div id="footer">
 			<ul>
 				<li><p> © 2014 <a href="http://phoenix.sheridanc.on.ca/~ccit1563/mvp/index.php/mvp/">UTMFOODIES</a>  - ALL RIGHTS RESERVED</p> </li>

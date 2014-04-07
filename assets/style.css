@@ -113,15 +113,12 @@ width: 100%;
 }
 
 #footer {
-	border-top-color:#F16487;
-	border-top-style:solid;
-	border-top-width:1px;
+
 	color:#998382;
 	font-family:arial;
 	font-size:20px;
 	font-weight:bold;
 	margin-left:157px;
-	margin-top:800px;
 	text-align:center;
 	width:80%;
 }
@@ -136,9 +133,6 @@ width: 100%;
 	margin-top: 1.5em;
 	padding: 1em;
 	margin-left: 1px;
-}
-
-#social {
 }
 
 #social ul
@@ -172,19 +166,19 @@ list-style-type:none;
 }
 
 .facebook {
-	background-image:url(http://phoenix.sheridanc.on.ca/~ccit1563/images/fb.png);
+	background-image:url(/~ccit1563/mvp/assets/images/fb.png);
 	background-position:initial initial;
 	background-repeat:initial initial;
 }
 
 .twitter {
-	background-image:url(http://phoenix.sheridanc.on.ca/~ccit1563/images/twitter.png);
+	background-image:url(/~ccit1563/mvp/assets/images/twitter.png);
 	background-position:initial initial;
 	background-repeat:initial initial;
 }
 
 .gplus {
-	background-image:url(http://phoenix.sheridanc.on.ca/~ccit1563/images/gplus.png);
+	background-image:url(/~ccit1563/mvp/assets/images/gplus.png);
 	background-position:initial initial;
 	background-repeat:initial initial;
 }
@@ -298,4 +292,14 @@ n {
 
  #counter {
 	margin-top: 140px;
+}
+
+.restPageImg {
+	background-color:#F16487;
+  display:block;
+  height:35%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:8px;
+  width:50%;
 }

@@ -13,8 +13,7 @@
 		
 		<script type="text/javascript" src="http://minkakellyfan.com/scripts/jquery-1.2.6.min.js"></script>
 		<script type="text/javascript" src="http://minkakellyfan.com/scripts/jquery-ui-personalized-1.5.2.packed.js"></script>
-<!-- <script type="text/javascript" -->
-		<script type="text/javascript" src="http://phoenix.sheridanc.on.ca/~ccit1563/qTip.js"></script>
+		<script type="text/javascript" src="/~ccit1563/mvp/assets/qTip.js"></script>		
 	</head>
 
 	<body>
@@ -42,5 +41,4 @@
 					</ul>
 				</nav>
 			</div> 
-
 			

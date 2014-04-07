@@ -1,15 +1,12 @@
 <?php
 	class Mvp extends CI_Controller {
-		public function __construct()
-		{
+		public function __construct() {
 			parent::__construct(); 
 			$this->load->model('mvp_model'); // Load the model.
 		}
 		
-		function index()
-		{
+		function index() {
 			$data['title'] = "UTMFoodies";
-			//$data['posts'] = $this->mvp_model->getPosts();
 
 			$this->load->view('templates/header', $data);
 			$this->load->view('homepage', $data);
@@ -20,9 +17,7 @@
 		// A restaurant's page will consist of:
 			// an information section (with details about the restaurant) and 
 			// a reviews section (which displays all the reviews for this restaurant).
-		function view($rest_id)
-		{
-			//$this->load->helper('form');
+		function view($rest_id) {
 			$data['title'] = "UTMFoodies";
 			$data['rest_id'] = $rest_id;
 			$data['info'] = $this->mvp_model->get_info($rest_id);
@@ -36,8 +31,7 @@
 		}
 
 		// Show the add a review page for a restaurant.
-		function review($rest_id)
-		{
+		function review($rest_id) {
 			$this->load->helper('form');
 			$data['title'] = "UTMFoodies";
 			$data['rest_id'] = $rest_id;
